@@ -1,0 +1,20 @@
+# Angular
+infoline-frontend/node_modules/
+infoline-frontend/dist/
+
+# Spring Boot / Maven
+springboot-api/target/
+
+# Terraform state
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+
+# Archives / packages
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

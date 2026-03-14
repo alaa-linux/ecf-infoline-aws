@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-api
+  template:
+    metadata:
+      labels:
+        app: springboot-api
+    spec:
+      containers:
+        - name: springboot-api
+          image: 377152274560.dkr.ecr.eu-west-3.amazonaws.com/infoline-springboot-api:1.1
+          ports:
+            - containerPort: 8080
